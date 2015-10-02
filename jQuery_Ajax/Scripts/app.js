@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     var url = "https://alumnoscurso.azure-mobile.net/Tables/Alumno";
 
+    //formatea la respuesta del servidor para mostrarlo por pantalla
     function procesarJson(res) {
         var data = res;
         var r = "";
