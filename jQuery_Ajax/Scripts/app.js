@@ -19,8 +19,8 @@
     //SOLO procesa respuestas en formato JSON
     function conGetJson() {
         var o = {
-            nombre: "Fran",
-            apellidos: "Lopez",
+            nombre: "MiNombre",
+            apellidos: "MiApellido",
             edad: 20,
             nota: 7
         }
@@ -30,8 +30,8 @@
     //no funciona con Azure, realiza una peticion POST
     function conPost() {
         var o = {
-            nombre: "Fran",
-            apellidos: "Lopez",
+            nombre: "MiNombre",
+            apellidos: "MiApellido",
             edad: 20,
             nota: 7
         }
@@ -47,8 +47,8 @@
     //peticion AJAX configurable
     function conAjax() {
         var o = {
-            nombre: "Fran",
-            apellidos: "Lopez",
+            nombre: "MiNombre",
+            apellidos: "MiApellido",
             edad: 20,
             nota: 7
         }
@@ -63,7 +63,7 @@
                 console.log(err);
             },
             data: JSON.stringify(o),
-            dataType: "",
+            dataType: "json",
             headers: {
                 "Content-Type": "application/json"
             }
@@ -74,7 +74,7 @@
     }
     
 
-
+    //ASIGNADO DE EVENTOS
     $("#linkGet").click(function (e) {
         e.preventDefault();
         conGet();
